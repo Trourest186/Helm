@@ -41,14 +41,14 @@ $ helm lint "dic path"
 $ helm template "Release parameters" "dic path" -f "values file"
 
 # Install helm packet
-- Using charts web: 
+- Using charts web
 - Using local
 $ helm install "chart name" "dic path"
 
 # Updating chart
 $ helm upgrade "chart name" "dic path" -f "values file"
 
-# Packing for push repository
+# Packing for pushing repository
 mkdir "folder contains"
 helm package "dic path" -d "contained path"
 helm repo index "dic path" (created in contain path)
