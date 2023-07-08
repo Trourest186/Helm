@@ -1,5 +1,4 @@
-# Helm Charts from nhtua
-Hi, I'm a DevOps engineer. I created this repository to keep my K8s recipes. It basically serves for many tutorials I made on [my Youtube channel](https://www.youtube.com/channel/UC64HFdJWvwuNt2ruywWvF-w).
+# Helm Charts
 
 But you're free to use and contribute all Helm charts here. 
 
