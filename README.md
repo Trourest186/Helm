@@ -49,8 +49,8 @@ $ helm install "chart name" "dic path"
 $ helm upgrade "chart name" "dic path" -f "values file"
 
 # Packing for pushing repository
-mkdir "folder contains"
-helm package "dic path" -d "contained path"
-helm repo index "dic path" (created in contain path)
+$ mkdir "folder contains"
+$ helm package "dic path" -d "contained path"
+$ helm repo index "dic path" (created in contain path)
 
 ```
