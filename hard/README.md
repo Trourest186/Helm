@@ -1,4 +1,4 @@
-# hello-world-k8s-mysql-nodejs
+# Hello-world-k8s-mysql-nodejs
 Get Hellow World response to HTTP request. Nodejs application fetches the data from MySQL database and serve as HTTP response.
 
 # Repository Structure
