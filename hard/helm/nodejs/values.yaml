@@ -1,0 +1,35 @@
+# values.yaml
+replicaCount: 2
+
+image:
+  repository: docker.io/trourest186/nodejsmysql
+  tag: latest
+
+imagePullSecrets:
+  - name: registry-pnh-secret
+
+db:
+  host: 10.0.4.229
+  user: root
+  pass: "1"
+
+env:
+  - name: MYSQL_HOST
+    value: "mysql.dev.svc.cluster.local"
+  - name: MYSQL_PORT
+    value: "3306"
+  - name: MYSQL_USER
+    value: "root"
+  - name: MYSQL_PASSWORD
+    value: "test1234"
+  - name: MYSQL_DATABASE
+    value: "nodejsdb"
+
+service:
+  name: nodejs
+  type: NodePort
+  port: 8080
+  nodePort: 31000
+
+deployment:
+  name: nodejs

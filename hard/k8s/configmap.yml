@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: dbconfig
+data:
+  MYSQL_HOST: mysql.dev.svc.cluster.local
+  MYSQL_PORT: "3306"
+  MYSQL_USER: root
+  MYSQL_DATABASE: nodejsdb

@@ -1,0 +1,17 @@
+{
+    "name": "hello-world",
+    "version": "1.0.0",
+    "description": "hello world nodejs app",
+    "author": "Kishor Shelke <kishorvshelke@gmail.com>",
+    "license": "MIT",
+    "main": "app.js",
+    "keywords": [
+        "nodejs",
+        "bootstrap",
+        "express"
+    ],
+    "dependencies": {
+        "express": "^4.16.4",
+        "mysql": "^2.18.1"
+    }
+}
