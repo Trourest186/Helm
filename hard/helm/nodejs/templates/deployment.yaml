@@ -12,6 +12,10 @@ spec:
       labels:
         app: nodejs
     spec:
+      {{- with .Values.imagePullSecrets }}
+      imagePullSecrets:
+        {{- toYaml . | nindent 8 }}
+      {{- end }}
       containers:
         - name: nodejs
           image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
@@ -19,9 +23,7 @@ spec:
           - containerPort: 8080
             name: http
             protocol: TCP
-          env:
-            {{- range .Values.nodejs }}
-            - name: {{ .name }}
-              value: {{ .value }}
-            {{- end }}
+          envFrom:
+            - secretRef:
+                name: db-credentials
 
